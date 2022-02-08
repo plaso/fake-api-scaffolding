@@ -3,7 +3,7 @@ const httpClient = axios.create({
   baseURL: 'http://localhost:8000/pokemons'
 })
 
-const deleteCourse = (id) => httpClient.delete(`/${id}`)
+const deletePokemon = (id) => httpClient.delete(`/${id}`)
   .then(() => {
     document.getElementById(`pokemon-${id}`).remove()
   })
@@ -12,6 +12,6 @@ const deleteCourse = (id) => httpClient.delete(`/${id}`)
 document.querySelectorAll('.delete-btn').forEach(btn => {
   btn.onclick = (event) => {
     btn.classList.add('disabled')
-    deleteCourse(event.target.value)
+    deletePokemon(event.target.value)
   }
 })
