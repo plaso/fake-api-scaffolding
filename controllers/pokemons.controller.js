@@ -59,7 +59,8 @@ module.exports.edit = (req, res, next) => {
 module.exports.editClient = (req, res, next) => {
   pokemonsService.editPokemon(req.params.id)
   .then((response) => {
-    res.status(200).json({})
+    
+    res.redirect("/pokemons")
   })
   .catch(err => next(err))
 
