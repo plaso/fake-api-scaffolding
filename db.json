@@ -1,131 +1,125 @@
 {
-  "european":[
-     {
-        "id": 1,
-        "name": {
-           "common": "European robin",
-           "scientific": "Erithacus rubecula"
-        },
-        "family": "Muscicapidae",
-        "observed": "true"
-     },
+  "european": [
+    {
+      "id": 1,
+      "name": {
+        "common": "European robin",
+        "scientific": "Erithacus rubecula"
+      },
+      "family": "Muscicapidae",
+      "observed": "true"
+    },
 
-     {
+    {
       "id": 2,
       "name": {
-         "common": "Eurasian nuthatch",
-         "scientific": "Sitta europaea"
+        "common": "Eurasian nuthatch",
+        "scientific": "Sitta europaea"
       },
       "family": "Sittidae",
       "observed": "true"
-   },
+    },
 
-   {
+    {
       "id": 3,
       "name": {
-         "common": "Tenerife blue chaffinch",
-         "scientific": "Fringilla teydea"
+        "common": "Tenerife blue chaffinch",
+        "scientific": "Fringilla teydea"
       },
       "family": "Fringillidae",
       "observed": "false"
-   },
+    },
 
-   {
+    {
       "id": 4,
       "name": {
-         "common": "Great spotted woodpecker",
-         "scientific": "Dendrocopos major"
+        "common": "Great spotted woodpecker",
+        "scientific": "Dendrocopos major"
       },
       "family": "Dendrocopos",
       "observed": "true"
-   },
+    },
 
-   {
+    {
       "id": 5,
       "name": {
-         "common": "Red kite",
-         "scientific": "Milvus milvus"
+        "common": "Red kite",
+        "scientific": "Milvus milvus"
       },
       "family": "Accipitridae",
       "observed": "true"
-   },
+    },
 
-   {
+    {
       "id": 6,
       "name": {
-         "common": "European roller",
-         "scientific": "Coracias garrulus"
+        "common": "European roller",
+        "scientific": "Coracias garrulus"
       },
       "family": "Coraciidae",
       "observed": "true"
-   }
-
+    }
   ],
 
   "american": [
-
-   {
-      "id":1,
+    {
+      "id": 1,
       "name": {
-         "common": "Northern cardinal",
-         "scientific": "Cardinalis cardinalis"
+        "common": "Northern cardinal",
+        "scientific": "Cardinalis cardinalis"
       },
       "family": "Cardinalis",
       "observed": "false"
-   },
+    },
 
-   {
+    {
       "id": 2,
       "name": {
-         "common": "Indigo bunting",
-         "scientific": "Passerina cyanea"
+        "common": "Indigo bunting",
+        "scientific": "Passerina cyanea"
       },
       "family": "Passerina",
       "observed": "false"
-   },
+    },
 
-   {
+    {
       "id": 3,
       "name": {
-         "common": "Eastern bluebird",
-         "scientific": "Sialia sialis"
+        "common": "Eastern bluebird",
+        "scientific": "Sialia sialis"
       },
       "family": "Turdidae",
       "observed": "false"
-   },
+    },
 
-   {
+    {
       "id": 4,
       "name": {
-         "common": "Tocororo",
-         "scientific": "Priotelus temnurus"
+        "common": "Tocororo",
+        "scientific": "Priotelus temnurus"
       },
       "family": "Trogonidae",
       "observed": "false"
-   },
+    },
 
-   {
+    {
       "id": 5,
       "name": {
-         "common": "Brown violetear",
-         "scientific": "Colibri delphinae"
+        "common": "Brown violetear",
+        "scientific": "Colibri delphinae"
       },
       "family": "Trochilidae",
       "observed": "false"
-   },
+    },
 
-   {
+    {
       "id": 6,
       "name": {
-         "common": "Elegant tern",
-         "scientific": "Thalasseus elegans"
+        "common": "Elegant tern",
+        "scientific": "Thalasseus elegans"
       },
       "family": "Laridae",
       "observed": "false"
-   }
-
-]
-  
+    }
+  ]
 }
-
-

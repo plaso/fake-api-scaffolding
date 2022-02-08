@@ -12,5 +12,6 @@ router.get('/', (req, res, next) => {
 /* BIRDS */
 
 router.get("/birds", birdsController.list);
+router.get("/birds/:id", birdsController.get) /* REMEMBER: ruta parametizable al final */
 
 module.exports = router;
