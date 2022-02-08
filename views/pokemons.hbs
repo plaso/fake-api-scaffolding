@@ -1,19 +1,19 @@
-<h1>Courses</h1>
+<h1>Pokemons</h1>
 
 <div class="row row-cols-1 row-cols-md-3 g-4">
-  {{#each courses}}
-    <div id="course-{{this.id}}" class="col">
+  {{#each pokemons}}
+    <div id="pokemon-{{this.id}}" class="col">
       <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
         <div class="card-header">{{this.type}}</div>
         <div class="card-body">
           <h5 class="card-title">{{this.name}}</h5>
-          <a class="btn btn-light" href="/courses/{{this.id}}">See more</a>
-          <form class="d-inline" action="/courses/{{this.id}}/delete" method="post">
+          <a class="btn btn-light" href="/pokemons/{{this.id}}">See more</a>
+          <form class="d-inline" action="/pokemons/{{this.id}}/delete" method="post">
             <button type="submit" class="btn btn-danger">Delete SSR</a>
           </form>
 
           <button type="button" value="{{this.id}}" class="delete-btn btn btn-danger">
-            Delete Client
+            Delete Pokemon
           </button>
         </div>
       </div>
@@ -21,7 +21,7 @@
   {{/each}}
 </div>
 
-<a class="btn btn-primary" href="/courses/new">Create new course</a>
+<a class="btn btn-primary" href="/pokemons/new">Create new pokemon</a>
 
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script src="/js/delete.js"></script>

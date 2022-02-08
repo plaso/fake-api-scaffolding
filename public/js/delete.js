@@ -1,11 +1,11 @@
 
 const httpClient = axios.create({
-  baseURL: 'http://localhost:8000/courses'
+  baseURL: 'http://localhost:8000/pokemons'
 })
 
 const deleteCourse = (id) => httpClient.delete(`/${id}`)
   .then(() => {
-    document.getElementById(`course-${id}`).remove()
+    document.getElementById(`pokemon-${id}`).remove()
   })
   .catch(err => console.error(err))
 
