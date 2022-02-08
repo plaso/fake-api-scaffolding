@@ -1,0 +1,12 @@
+<h1>Birds</h1>
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+{{#each birds}}
+  <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+        <div class="card-header">{{this.name.common}}</div>
+        <div class="card-body">
+          <h5 class="card-title">{{this.name.scientific}}</h5>
+          <a class="btn btn-light" href="/courses/{{this.id}}">See more</a>
+
+{{/each}}
+</div>
