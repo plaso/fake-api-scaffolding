@@ -16,5 +16,4 @@ module.exports = {
   createPokemon,
   deletePokemon,
   editPokemon
-
 }

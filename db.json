@@ -1,24 +1,14 @@
 {
-  "pokemons":[
-     {
-        "id":1,
-        "name":"Pikachu",
-        "type":"RAYO"
-     },
-     {
-        "id":2,
-        "name":"Charmander",
-        "type":"FUEGO"
-     },
-     {
-        "id":3,
-        "name":"Psyduck",
-        "type":"PSIQUICO"
-     },
-     {
-        "id":4,
-        "name":"Venusaur",
-        "type":"PLANTA"
-     }
+  "pokemons": [
+    {
+      "name": "Charizard",
+      "type": "Fuego",
+      "id": 1
+    },
+    {
+      "name": "charmander",
+      "type": "Fuego",
+      "id": 2
+    }
   ]
 }

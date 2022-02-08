@@ -49,7 +49,7 @@ module.exports.deleteClient = (req, res, next) => {
 module.exports.edit = (req, res, next) => {
   pokemonsService.editPokemon(req.params.id)
   .then((response) => {
-    res.redirect('pokemons/edit-pokemon')
+    res.render('edit-pokemon')
   })
   .catch(err => next(err))
 
@@ -60,7 +60,7 @@ module.exports.editClient = (req, res, next) => {
   pokemonsService.editPokemon(req.params.id)
   .then((response) => {
     
-    res.redirect("/pokemons")
+    res.status(200).json({})
   })
   .catch(err => next(err))
 
