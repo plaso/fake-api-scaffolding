@@ -42,7 +42,7 @@ app.use((error, req, res, next) => {
   });
 });
 
-const port = Number(process.env.PORT || 3010);
+const port = Number(process.env.PORT || 3008);
 
 app.listen(port, () => {
   console.log(`Ready! Listening on port ${port}`);
