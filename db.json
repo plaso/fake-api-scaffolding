@@ -1,5 +1,5 @@
 {
-  "european": [
+  "birds": [
     {
       "id": 1,
       "name": {
@@ -58,68 +58,6 @@
       },
       "family": "Coraciidae",
       "observed": "true"
-    }
-  ],
-
-  "american": [
-    {
-      "id": 1,
-      "name": {
-        "common": "Northern cardinal",
-        "scientific": "Cardinalis cardinalis"
-      },
-      "family": "Cardinalis",
-      "observed": "false"
-    },
-
-    {
-      "id": 2,
-      "name": {
-        "common": "Indigo bunting",
-        "scientific": "Passerina cyanea"
-      },
-      "family": "Passerina",
-      "observed": "false"
-    },
-
-    {
-      "id": 3,
-      "name": {
-        "common": "Eastern bluebird",
-        "scientific": "Sialia sialis"
-      },
-      "family": "Turdidae",
-      "observed": "false"
-    },
-
-    {
-      "id": 4,
-      "name": {
-        "common": "Tocororo",
-        "scientific": "Priotelus temnurus"
-      },
-      "family": "Trogonidae",
-      "observed": "false"
-    },
-
-    {
-      "id": 5,
-      "name": {
-        "common": "Brown violetear",
-        "scientific": "Colibri delphinae"
-      },
-      "family": "Trochilidae",
-      "observed": "false"
-    },
-
-    {
-      "id": 6,
-      "name": {
-        "common": "Elegant tern",
-        "scientific": "Thalasseus elegans"
-      },
-      "family": "Laridae",
-      "observed": "false"
     }
   ]
 }
