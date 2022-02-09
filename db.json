@@ -1,79 +1,63 @@
 {
-  "cities":[
-     {
-        "id":1,
-        "name":"Barcelona"
-     },
-     {
-        "id":2,
-        "name":"Madrid"
-     },
-     {
-        "id":3,
-        "name":"Miami"
-     },
-     {
-        "id":4,
-        "name":"Paris"
-     }
-  ],
-  "courses":[
-     {
-        "id":1,
-        "name":"WebDev",
-        "type":"Full Time"
-     },
-     {
-        "id":2,
-        "name":"WebDev",
-        "type":"Part Time"
-     },
-     {
-        "id":3,
-        "name":"UX/UI",
-        "type":"Full Time"
-     },
-     {
-        "id":4,
-        "name":"UX/UI",
-        "type":"Part Time"
-     }
-  ],
-  "bootcamps":[
-     {
-        "id":1,
-        "cityId":1,
-        "courseId":1
-     },
-     {
-        "id":2,
-        "cityId":2,
-        "courseId":2
-     },
-     {
-        "id":3,
-        "cityId":3,
-        "courseId":1
-     },
-     {
-        "id":4,
-        "cityId":4,
-        "courseId":2
-     },
-     {
-        "id":5,
-        "cityId":2,
-        "courseId":3
-     },
-     {
-        "id":6,
-        "cityId":3,
-        "courseId":4
-     },
-     {
-        "id":7,
-        "cityId":1,
-        "courseId":3
-     }
+  "cakes": [
+    {
+      "id": 1,
+      "name": "Lemon cheesecake",
+      "previewDescription": "A cheesecake made of lemon",
+      "detailDescription": "Cheesecake is a sweet dessert consisting of one or more layers. The main, and thickest layer, consists of a mixture of soft, fresh cheese (typically cream cheese or ricotta), eggs, and sugar; if there is a bottom layer it often consists of a crust or base made from crushed cookies (or digestive biscuits), graham crackers, pastry, or sponge cake. It may be baked or unbaked (usually refrigerated). Cheesecake is usually sweetened with sugar and may be flavored or topped with fruit, whipped cream, nuts, cookies, fruit sauce, and/or chocolate syrup. Cheesecake can be prepared in many flavors, such as strawberry, pumpkin, key lime, chocolate, Oreo, chestnut, or toffee.",
+      "image": "https://raw.githubusercontent.com/filippella/Dagger-Rx-Database-MVP/master/cakes/lemoncheese_cake.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Carrot cake",
+      "previewDescription": "Bugs bunnys favourite",
+      "detailDescription": "Carrot cake closely resembles a quick bread in method of preparation (all the wet ingredients, such as the eggs and sugar, are mixed, all the dry ingredients are mixed, and the wet are then added to the dry) and final consistency (which is usually denser than a traditional cake and has a coarser crumb). Many carrot cake recipes include optional ingredients, such as kirsch, cinnamon, nuts, pineapple or raisins. The most common icing on carrot cake is icing sugar and lemon juice or icing sugar and kirsch (Europe) and an icing with icing sugar, butter and cream cheese (United States). As the cake is relatively moist, it can be conserved longer than many other types of cakes.",
+      "image": "https://raw.githubusercontent.com/filippella/Dagger-Rx-Database-MVP/master/cakes/carrot_cake.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Banana cake",
+      "previewDescription": "Banana cake is a cake prepared using banana",
+      "detailDescription": "Banana cake is prepared using banana as a primary ingredient and typical cake ingredients such as flour, sugar, eggs, butter, margarine or oil and baking soda. The bananas can be mashed or puréed using a food processor or electric mixer and mixed into the cake batter, and the cake can also be topped or garnished with sliced bananas. Banana cake may be prepared as a use for browned or overly-ripe bananas. Chocolate may be used as an ingredient, which along with the banana is an enjoyable flavor combination for some people. Nuts such as walnuts and macadamias may be used in the batter and to top and garnish the cake.",
+      "image": "https://raw.githubusercontent.com/filippella/Dagger-Rx-Database-MVP/master/cakes/banana_cake.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Chocolate cake",
+      "previewDescription": "Chocolate cake is a cake flavored with melted chocolate, cocoa powder, or sometimes both.",
+      "detailDescription": "Chocolate cake is made with chocolate; it can be made with other ingredients, as well. These ingredients include fudge, vanilla creme, and other sweeteners. The history of chocolate cake goes back to 1764, when Dr. James Baker discovered how to make chocolate by grinding cocoa beans between two massive circular millstones.",
+      "image": "https://raw.githubusercontent.com/filippella/Dagger-Rx-Database-MVP/master/cakes/chocolate_cake.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Fudge cake",
+      "previewDescription": "A fudge cake is a chocolate cake containing fudge",
+      "detailDescription": "This recipe is also known as 'Death by Chocolate', as it contains a considerable amount of chocolate, if topped with chocolate ice cream and lashings of whipped cream. In addition to Death By Chocolate, the many variations include pudding fudge cake, made with chocolate cake mix, chocolate pudding, and chocolate chips. Alternatively, 'fudge cake' is a term in the American South to refer to a dense, single-layer chocolate cake served with or without icing. It is similar to a brownie, although moister with more chocolate.",
+      "image": "https://raw.githubusercontent.com/filippella/Dagger-Rx-Database-MVP/master/cakes/fudge_cake.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Apple cake",
+      "previewDescription": "Apple cake is a popular dessert produced with the main ingredient of apples.",
+      "detailDescription": "Apple cake is a popular dessert produced with the main ingredient of apples. Such a cake is made through the process of slicing this sweet fruit to add fragrance to a plain cake base. Traditional apple cakes go a step further by including various spices such as nutmeg or cinnamon, which give a unique flavour. Upon the addition of spices the batter can also be accompanied by crushed nuts, the most popular being walnuts and almonds.",
+      "image": "https://raw.githubusercontent.com/filippella/Dagger-Rx-Database-MVP/master/cakes/apple_cake.JPG"
+    },
+    {
+      "id": 7
+    },
+    {
+      "name": "test",
+      "id": 8
+    },
+    {
+      "name": "test",
+      "id": 9
+    },
+    {
+      "name": "text2",
+      "previewDescription": "text",
+      "detailDescription": "text",
+      "id": 10
+    }
   ]
 }
