@@ -8,7 +8,7 @@ const createPokemon = (data) => httpClient.post('/pokemons', data)
 
 const deletePokemon = (pokemonId) => httpClient.delete(`/pokemons/${pokemonId}`)
 
-const editPokemon = (pokemonId) => httpClient.put(`/pokemons/${pokemonId}`)
+const editPokemon = (id, pokemon) => httpClient.patch(`/pokemons/${id}`, pokemon)
 
 module.exports = {
   getPokemons,

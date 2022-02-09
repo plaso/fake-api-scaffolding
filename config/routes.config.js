@@ -15,8 +15,8 @@ router.get('/pokemons/:id', pokemonsController.get)
 router.post('/pokemons', pokemonsController.doCreate)
 router.post('/pokemons/:id/delete', pokemonsController.delete)
 router.delete('/pokemons/:id/delete', pokemonsController.deleteClient)
-router.post('/pokemons/:id/edit', pokemonsController.edit )
-router.put('/pokemons/:id/edit', pokemonsController.editClient )
+router.get('/pokemons/:id/edit', pokemonsController.edit )
+router.post('/pokemons/:id', pokemonsController.editClient )
 
 
 module.exports = router;

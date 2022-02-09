@@ -1,21 +1,20 @@
 <h1>Pokemons</h1>
 
 <div class="row row-cols-1 row-cols-md-3 g-4">
-  {{#each pokemons}}
-    <div id="pokemon-{{this.id}}" class="col">
+  {{#each pokemons as |pokemon|}}
+    <div id="pokemon-{{pokemon.id}}" class="col">
       <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
-        <div class="card-header">{{this.type}}</div>
+        <div class="card-header">{{pokemon.type}}</div>
         <div class="card-body">
-          <h5 class="card-title">{{this.name}}</h5>
-          <a class="btn btn-light" href="/pokemons/{{this.id}}">See more</a>
-          <form class="d-inline" action="/pokemons/{{this.id}}/delete" method="post">
+          <h5 class="card-title">{{pokemon.name}}</h5>
+          <a class="btn btn-light" href="/pokemons/{{pokemon.id}}">See more</a>
+          <a class="btn btn-light" href="/pokemons/{{pokemon.id}}/edit">edit pokemon</a>
+          <form class="d-inline" action="/pokemons/{{pokemon.id}}/delete" method="post">
             <button type="submit" class="btn btn-danger">Delete SSR</a>
           </form>
-          <form class="d-inline" action="/pokemons/{{this.id}}/edit" method="post">
-            <button type="submit" class="btn btn-danger">EDIT</a>
-          </form>
+         
 
-          <button type="button" value="{{this.id}}" class="delete-btn btn btn-danger">
+          <button type="button" value="{{pokemon.id}}" class="delete-btn btn btn-danger">
             Delete Pokemon
           </button>
         </div>

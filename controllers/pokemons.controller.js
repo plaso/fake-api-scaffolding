@@ -1,3 +1,4 @@
+const { response } = require('express');
 const pokemonsService = require('../services/pokemons.service');
 
 module.exports.list = (req, res, next) => {
@@ -47,9 +48,9 @@ module.exports.deleteClient = (req, res, next) => {
 
 
 module.exports.edit = (req, res, next) => {
-  pokemonsService.editPokemon(req.params.id)
+  pokemonsService.getPokemon(req.params.id)
   .then((response) => {
-    res.render('edit-pokemon')
+    res.render('edit-pokemon', {pokemon: response.data});
   })
   .catch(err => next(err))
 
@@ -57,10 +58,10 @@ module.exports.edit = (req, res, next) => {
 }
 
 module.exports.editClient = (req, res, next) => {
-  pokemonsService.editPokemon(req.params.id)
+  pokemonsService.editPokemon(req.params.id, req.body)
   .then((response) => {
     
-    res.status(200).json({})
+    res.redirect(`/pokemons/${req.params.id}`)
   })
   .catch(err => next(err))
 
