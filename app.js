@@ -19,14 +19,13 @@ app.use(logger('dev'));
  */
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
-/* app.use(express.static(`${__dirname}/public`)); */
-/* hbs.registerPartials(__dirname + "/views/partials"); */
 
 /**
  * Configure routes
  */
 const router = require('./config/routes.config');
 app.use('/', router);
+
 
 /* Errors */
 
