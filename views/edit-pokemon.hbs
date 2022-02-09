@@ -1,0 +1,15 @@
+<h2>{{pokemon.name}}</h2>
+
+<h1>EDIT POKEMON</h1>
+
+<br />
+<form action="/pokemons/{{pokemon.id}}" method="POST">
+  <label for="name">name</label>
+  <input class="form-control" type="text" name="name" value="{{pokemon.name}}" />
+  <br />
+  <label for="type">type</label>
+  <input class="form-control" type="text" name="type" value="{{pokemon.type}}" />
+  <br />
+  
+  <button class="btn btn-warning" type="submit">Update Details</button>
+</form> 
