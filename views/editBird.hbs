@@ -1,9 +1,10 @@
-<form action="/birds" method="POST">
+<form action="/birds/{{bird.id}}/edit" method="POST">
   <div class="mb-3">
     <label for="commonName" class="form-label">Common name</label>
     <input
       name="commonName"
       type="text"
+      value="{{ bird.commonName }}"
       class="form-control"
       id="name"
       aria-describedby="emailHelp"
@@ -14,6 +15,7 @@
     <input
       name="scientificName"
       type="text"
+      value="{{ bird.scientificName }}"
       class="form-control"
       id="name"
       aria-describedby="emailHelp"
@@ -24,6 +26,7 @@
     <input
       name="family"
       type="text"
+       value="{{ bird.family }}"
       class="form-control"
       id="name"
       aria-describedby="emailHelp"

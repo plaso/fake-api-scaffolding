@@ -20,7 +20,7 @@ module.exports.get = (req, res, next) => {
 };
 
 module.exports.create = (req, res, next) => {
-  res.render("newBird");
+  res.render('newBird');
 };
   
 module.exports.doCreate = (req, res, next) => {
@@ -38,5 +38,18 @@ module.exports.delete = (req, res, next) => {
     res.redirect('/birds')
     console.log('Successfully delete')
   })
-  .catch(err => next(err))
+  .catch(err => next(err));
+};
+
+module.exports.edit = (req, res, next) => {
+  res.render('editBird')
+};
+
+module.exports.doEdit = (req, res, next) => {
+  birdsService
+  .editBird(req.params.id)
+  .then((response) => {
+    res.redirect(`/birdDetail/${response.data.id}`)
+  })`
+  .catch((err) => next(err));`
 }
