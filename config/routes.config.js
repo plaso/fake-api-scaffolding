@@ -15,6 +15,7 @@ router.get("/birds", birdsController.list);
 router.get('/birds/newBird', birdsController.create);
 router.get("/birds/:id", birdsController.get); /* REMEMBER: ruta parametizable al final */
 router.post("/birds", birdsController.doCreate);
+router.post('/birds/:id/delete', birdsController.delete)
 
 
 module.exports = router;

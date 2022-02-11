@@ -2,12 +2,15 @@ const httpClient = require("./base.service");
 
 const getBirds = () => httpClient.get("/birds");
 
-const getBird = (birdId) => httpClient.get(`/birds/${birdId}`);
+const getBird = (id) => httpClient.get(`/birds/${id}`);
 
-const create = (data) => httpClient.post('/birds', data)
+const createBird = (data) => httpClient.post('/birds', data);
+
+const deleteBird = (id) => httpClient.delete(`/birds/${id}`)
 
  module.exports = {
      getBirds,
      getBird,
-     create
+     createBird,
+     deleteBird
  }

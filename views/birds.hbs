@@ -5,10 +5,13 @@
     <div id="bird-{{this.id}}" class="col">
       <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
 
-        <div class="card-header">{{this.name.common}}</div>
+        <div class="card-header">{{this.commonName}}</div>
         <div class="card-body">
-          <h5 class="card-title">{{this.name.scientific}}</h5>
-          <a class="btn btn-light" href="/birdDetail/{{this.id}}">See details</a>
+          <h5 class="card-title">{{this.scientificName}}</h5>
+          <a class="btn btn-light" href="/birds/{{this.id}}">See details</a>
+           <form class="d-inline" action="/birds/{{this.id}}/delete" method="post">
+           <button type="submit" class="btn btn-danger">Delete</a>
+           </form>
         </div>
       </div>
     </div>

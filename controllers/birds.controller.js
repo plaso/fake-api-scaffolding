@@ -22,12 +22,21 @@ module.exports.get = (req, res, next) => {
 module.exports.create = (req, res, next) => {
   res.render("newBird");
 };
-
+  
 module.exports.doCreate = (req, res, next) => {
   birdsService
     .createBird(req.body)
     .then((response) => {
-      res.redirect(`/birds/${response.data.id}`);
+      res.redirect(`/birdDetail/${response.data.id}`);
     })
     .catch((err) => next(err));
 };
+
+module.exports.delete = (req, res, next) => {
+  birdsService.deleteBird(req.params.id)
+  .then((response) => {
+    res.redirect('/birds')
+    console.log('Successfully delete')
+  })
+  .catch(err => next(err))
+}
