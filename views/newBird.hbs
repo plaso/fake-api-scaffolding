@@ -1,0 +1,45 @@
+<form action="/birds" method="POST">
+  <div class="mb-3">
+    <label for="commonName" class="form-label">Common name</label>
+    <input
+      name="commonName"
+      type="text"
+      class="form-control"
+      id="name"
+      aria-describedby="emailHelp"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="scientificName" class="form-label">Scientific name</label>
+    <input
+      name="scientificName"
+      type="text"
+      class="form-control"
+      id="name"
+      aria-describedby="emailHelp"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="family" class="form-label">Family</label>
+    <input
+      name="family"
+      type="text"
+      class="form-control"
+      id="name"
+      aria-describedby="emailHelp"
+    />
+  </div>
+  <div>
+    <label for="observed" class="form-label">Observed</label>
+    <select
+      name="observed"
+      class="form-select mb-3"
+      aria-label="Default select example"
+    >
+      <option selected value="true">Yes</option>
+      <option value="false">Not</option>
+    </select>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>

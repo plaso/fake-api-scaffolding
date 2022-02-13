@@ -1,79 +1,61 @@
 {
-  "cities":[
-     {
-        "id":1,
-        "name":"Barcelona"
-     },
-     {
-        "id":2,
-        "name":"Madrid"
-     },
-     {
-        "id":3,
-        "name":"Miami"
-     },
-     {
-        "id":4,
-        "name":"Paris"
-     }
-  ],
-  "courses":[
-     {
-        "id":1,
-        "name":"WebDev",
-        "type":"Full Time"
-     },
-     {
-        "id":2,
-        "name":"WebDev",
-        "type":"Part Time"
-     },
-     {
-        "id":3,
-        "name":"UX/UI",
-        "type":"Full Time"
-     },
-     {
-        "id":4,
-        "name":"UX/UI",
-        "type":"Part Time"
-     }
-  ],
-  "bootcamps":[
-     {
-        "id":1,
-        "cityId":1,
-        "courseId":1
-     },
-     {
-        "id":2,
-        "cityId":2,
-        "courseId":2
-     },
-     {
-        "id":3,
-        "cityId":3,
-        "courseId":1
-     },
-     {
-        "id":4,
-        "cityId":4,
-        "courseId":2
-     },
-     {
-        "id":5,
-        "cityId":2,
-        "courseId":3
-     },
-     {
-        "id":6,
-        "cityId":3,
-        "courseId":4
-     },
-     {
-        "id":7,
-        "cityId":1,
-        "courseId":3
-     }
+  "birds": [
+    {
+      "id": 1,
+      "commonName": "European robin",
+      "scientificName": "Erithacus rubecula",
+      "family": "Muscicapidae",
+      "observed": "true"
+  
+    },
+    {
+      "id": 2,
+      "commonName": "Eurasian nuthatch",
+      "scientificName": "Sitta europaea",
+      "family": "Sittidae",
+      "observed": "true"
+    },
+    {
+      "id": 3,
+      "commonName": "Tenerife blue chaffinch",
+      "scientificName": "Fringilla teydea",
+      "family": "Fringillidae",
+      "observed": "false"
+    },
+    {
+      "id": 4,
+      "commonName": "Great spotted woodpecker",
+      "scientificName": "Dendrocopos major",
+      "family": "Dendrocopos",
+      "observed": "true"
+    },
+    {
+      "id": 5,
+      "commonName": "Red kite",
+      "scientificName": "Milvus milvus",
+      "family": "Accipitridae",
+      "observed": "true"
+    },
+    {
+      "id": 6,
+      "commonName": "Eurasian roller",
+      "scientificName": "Coracias garrulus",
+      "family": "Coraciidae",
+      "observed": "true"
+    },
+    {
+      "id": 7,
+      "commonName": "Common kestrel",
+      "scientificName": "Falco Tinnunculus",
+      "family": "Falconidae",
+      "observed": "true"
+    },
+    {
+      "commonName": "European wren",
+      "scientificName": "Troglodytes troglodytes",
+      "family": "Troglodytidae",
+      "observed": "true",
+      "id": 8
+    }
   ]
 }
