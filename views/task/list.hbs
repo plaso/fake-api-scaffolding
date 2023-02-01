@@ -1,0 +1,13 @@
+<h1>TO DO'S:</h1>
+
+<div>
+  {{#each tasks as |task|}}
+    <div>
+      <h3>{{task.title}}</h3>
+      <p>{{task.expirationDate}}</p>
+      <button data-id="{{task.id}}" class="delete-btn btn btn-primary">Done!</button>
+    </div>
+  {{/each}}
+</div>
+
+<a class="btn btn-secondary" href="/task/create">Create New Task</a>
