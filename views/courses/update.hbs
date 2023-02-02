@@ -1,0 +1,13 @@
+<h1>Update Course</h1>
+
+<form action="/courses/{{course.id}}" method="POST">
+  <div class="mb-3">
+    <label for="name" class="form-label">Name:</label>
+    <input id="name" name="name" type="text" class="form-control" value="{{course.name}}">
+  </div>
+  <div class="mb-3">
+    <label for="type" class="form-label">Type:</label>
+    <input id="type" name="type" type="text" class="form-control" value="{{course.type}}">
+  </div>
+  <button class="btn btn-primary">Update</button>
+</form>

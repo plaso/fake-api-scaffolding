@@ -8,6 +8,8 @@ router.get('/', miscController.index);
 router.get('/courses', coursesController.list);
 router.get('/courses/create', coursesController.create);
 router.post('/courses', coursesController.doCreate);
-router.delete('/courses/:id', coursesController.doDelete)
+router.delete('/courses/:id', coursesController.doDelete);
+router.get('/courses/:id/edit', coursesController.edit);
+router.post('/courses/:id', coursesController.doEdit)
 
 module.exports = router;
