@@ -1,13 +1,13 @@
 const express = require('express');
 const router = express.Router();
 const miscController = require('../controllers/misc.controller');
-const taskController = require('../controllers/task.controller');
+const coursesController = require('../controllers/courses.controller');
 
 router.get('/', miscController.index);
 
-router.get('/task', taskController.list);
-router.get('/task/create', taskController.create);
-router.post('/task/create', taskController.doCreate);
-router.delete('/task/:id', taskController.doDelete);
+router.get('/courses', coursesController.list);
+router.get('/courses/create', coursesController.create);
+router.post('/courses', coursesController.doCreate);
+router.delete('/courses/:id', coursesController.doDelete)
 
 module.exports = router;

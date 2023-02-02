@@ -1,0 +1,16 @@
+<h1>Courses</h1>
+
+<div class="courses">
+  {{#each courses as |course|}}
+    <div class="card m-2" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">{{course.name}}</h5>
+        <p class="card-text">{{course.type}}</p>
+        <a href="#" class="btn btn-primary">Edit Info</a>
+        <button data-id="{{course.id}}" class="btn btn-danger delete-btn">Delete</button>
+      </div>
+    </div>
+  {{/each}}
+</div>
+
+<a class="btn btn-secondary" href="/courses/create">Create new course</a>
