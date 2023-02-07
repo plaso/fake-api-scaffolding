@@ -1,0 +1,16 @@
+<h1>All cities</h1>
+
+<ul>
+    {{#each cities as |city|}}
+        <li>{{city.name}} 
+            <form action="/cities/{{city.id}}" method="POST">
+            <button type ="submit">Delete</button>
+            </form>
+        </li>
+    {{/each}}
+</ul>
+
+<form action="/cities" method="POST">
+    <input type="text" name="name" id="name" placeholder="Toronto">
+    <button type="submit">Create</button>
+</form>
