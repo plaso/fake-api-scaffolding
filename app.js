@@ -1,7 +1,8 @@
 const createError = require('http-errors');
 const express = require('express');
 const logger = require('morgan');
-const path = require('path')
+const path = require('path');
+
 
 require('./config/hbs.config');
 

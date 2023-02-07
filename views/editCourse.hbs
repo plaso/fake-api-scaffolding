@@ -1,0 +1,16 @@
+<h1>courseEdit</h1>
+{{course.id}}
+<form action="/courses/{{course.id}}/edit" method="post">
+  <div class="mb-3">
+    <label for="name" class="form-label">Name</label>
+    <input id="name" name="name" type="text" placeholder="{{course.name}}" class="form-control"
+      aria-describedby="emailHelp" />
+  </div>
+
+  <select name="type" class="form-select mb-3">
+    <option selected value="Full Time">Full Time</option>
+    <option value="Part Time">Part Time</option>
+  </select>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
