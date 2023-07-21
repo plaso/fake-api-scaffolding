@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon -e hbs,js,css app.js",
-    "start": "node app.js"
+    "start": "node app.js",
+    "API": "json-server --watch db.json --port 8000"
   },
   "keywords": [],
   "author": "",
