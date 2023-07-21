@@ -1,0 +1,17 @@
+<h1>Cities</h1>
+
+<div>
+  {{#each cities as |city|}}
+  <div class="card m-2" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">{{city.name}}</h5>
+      <p class="card-text">{{city.type}}</p>
+      <form action="/cities/{{city.id}}/delete" method="POST">
+      <button type="submit" class="btn btn-danger">Delete</button>
+          </form>
+    </div>
+  </div>
+  {{/each}}
+</div>
+
+<a class="btn btn-primary" href="/cities/createCity">Create new city</a>
