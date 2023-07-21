@@ -1,12 +1,11 @@
 const { default: axios } = require('axios');
-const { getCourses, deleteCourse, createCourse } = require('../services/courses.service');
+const { getCities, deleteCity, createCity } = require('../services/cities.service');
 
 module.exports.list = (req, res, next) => {
-    console.log('entro')
 
-    getCourses()
+    getCities()
         .then(response => {
-            res.render('courses/list', { courses: response.data })
+            res.render('cities/citiesList', { cities: response.data })
         })
         .catch((err) => {
             console.log(err)
@@ -14,21 +13,21 @@ module.exports.list = (req, res, next) => {
 };
 
 module.exports.delete = (req, res, next) => {
-    deleteCourse(req.params.id)
+    deleteCity(req.params.id)
     .then((response) => {
-      res.redirect('/courses')
+      res.redirect('/cities')
     })
     .catch(err => next(err))
   };
 
   module.exports.create = (req, res, next) => {
-    res.render('courses/createCourse')
+    res.render('cities/createCity')
   };
 
   module.exports.doCreate = (req, res, next) => {
-    createCourse(req.body)
+    createCity(req.body)
     .then((response) => {
-        res.redirect('/courses')
+        res.redirect('/cities')
     })
     .catch(err => next(err))
 };

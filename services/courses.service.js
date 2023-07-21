@@ -2,11 +2,12 @@ const http = require('./base.service');
 
 const getCourses = () => http.get('/courses');
 
-const getCourse  = (id) => http.get(`/courses/${id}`);
+const deleteCourse  = (id) => http.delete(`/courses/${id}`);
 
-const updateCoruse  = (id, body) => http.get(`/courses/${id}`, body);
+const createCourse = (data) => http.post(`/courses`, data);
 
 module.exports = {
     getCourses,
-    getCourse,
+    deleteCourse,
+    createCourse
 }
