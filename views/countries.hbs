@@ -1,0 +1,32 @@
+<html>
+<head>
+    <title>Lista de Países</title>
+</head>
+<body>
+    <h1>Lista de Países</h1>
+    <div class="row">
+        <div class="col-sm-6 contenido-grid">
+            {{#each countries}}
+            
+            
+                <div class="card col-sm-6" style="width: 18rem;">
+                    <img src="{{this.flags.png}}" class="card-img-top" alt="{{this.flags}}">
+                    <div class="card-body">
+                        <h5 class="card-title"><strong>Nombre:</strong> {{this.name.common}}</h5>
+                    </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><strong>Capital:</strong> {{this.capital}}</li>
+                            <li class="list-group-item"><strong>Región:</strong> {{this.region}}</li>
+                        </ul>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
+                    </div>
+                </div>
+            {{/each}}
+        </div>
+    </div>
+    
+</body>
+</html>
+
